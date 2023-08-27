@@ -1,0 +1,18 @@
+ 
+        footer .fa-angle-down:before {
+            content: "\f107";
+            display: none;
+        }
+        #footer_logo{
+            margin: 0% 18%
+    }
+        
+        @media screen and (max-width: 600px) {
+            
+            footer .fa-angle-down:before {
+            content: "\f107";
+            display: block;
+        }}
+        .footer_fname, .footer_email {
+    font-size: 1rem;}
+   
