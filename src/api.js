@@ -45,6 +45,17 @@ export const getReadyToShip = ()=>{
             }
     } 
      
-     `);
+     `);}
+export const getInstagramImages = ()=>{
+    return sanityQuery(`
+    *[_type == 'products'&& 
+InstagramImage == true]{
+      _id,
+      pr_img{
+              asset-> {
+                url
+              }
+            }
+    }`);
 }
 

@@ -4,11 +4,15 @@
     text-align: center;
 }
 
-/* .card-border:not(.zoom-in.card-border) {
-    border: 0px solid #c451a725;
-
-} */
-
+.w-85{
+    width:85%;
+}
+.w-90{
+    width:90%;
+}
+.w-95{
+    width:95%;
+}
 .card:not(footer .card) {
     margin: 5% !important;
     border-radius: 0px;
@@ -56,6 +60,7 @@ img.card-img-top.instagram-opacity {
     top: 50%;
     font-size: 26px;
     left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
 }
 
