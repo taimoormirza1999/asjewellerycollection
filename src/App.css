@@ -6,7 +6,9 @@
   font-style: justify;
   text-decoration: none;
 }
-
+::selection{
+  color: #bbb572;
+}
 a {
   text-decoration: none;
 }
@@ -38,6 +40,7 @@ cursor: pointer;
 
 ::-webkit-scrollbar {
   width: 13px;
+  background:black;
 }
 /* Track */
 

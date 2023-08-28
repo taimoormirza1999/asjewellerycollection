@@ -1,0 +1,51 @@
+// Create a mixin for responsive width
+@mixin large-width($width) {
+    @media (min-width: 981px) {
+      width: $width;
+    }
+  }
+@mixin medium-width($width) {
+    @media (min-width: 768px) {
+      width: $width;
+    }
+  }
+@mixin small-width($width) {
+    @media (max-width: 768px) {
+      width: $width;
+    }
+  }
+  
+  .w-80{
+    @include small-width(80%);
+  }
+  .w-90{
+    @include small-width(90%);
+  }
+  .w-95{
+    @include small-width(95%);
+  }
+  // Usage
+  .w-md-80 {
+    @include medium-width(80%);
+  }
+  
+  .w-md-90 {
+    @include medium-width(90%);
+  }
+  
+  .w-md-95 {
+    @include medium-width(95%);
+  }
+
+  .w-lg-80 {
+    @include large-width(80%);
+  }
+  
+  .w-lg-90 {
+    @include large-width(90%);
+  }
+  
+  .w-lg-100 {
+    @include large-width(100%);
+  }
+  

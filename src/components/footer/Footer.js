@@ -39,7 +39,7 @@ function Footer() {
     <footer className="py-5 container" style={{backgroundColor: '#242424'}}>
     <div className="card-group" >
   <div className="card border-0 px-5 align-items-center">
-    <img src="asjewellary_collaction.png"  className="pb-2 px-3 img-fluid" id="footer_logo" height="140px" alt="..." />
+    <img src="asjewellary_collaction.png"  className="pb-2 px-3 img-fluid w-80" id="footer_logo" height="140px" alt="..." />
     <div className="col-sm-5 col-8 col-md-8 pb-2 mt-3 text-center d-flex justify-content-center" style={{ width: '100%' }}>
     <a href="" className="px-2">
                             <i class=" pt-3 fab fa-facebook-f  links_color_hover "> </i></a>
