@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import './Navigation.css';
+import { useUser } from '../../userContext';
 
 function Navigation() {
+
+  const {user}=useUser();
   const [currencyMenu, SetCurrencyMenu] = useState(false);
+  // alert("Rendered Navigation");
   function t(x) {
     x.style.color = '#bbb572';
     x.style.backgroundColor = '#000000';
@@ -94,10 +98,12 @@ function Navigation() {
             <a href="" className="header-icon mx-2" style={{ textDecoration: 'none' }}>
               <i className="fs-6 far fa-user pt-1 text-light mx-1"></i>
 
-              <span className="fs-6 top-sub-heading text-light">Login</span>
+              <span className="fs-6 top-sub-heading text-light">
+              {user? user.name : 'Login'}
+              </span>
             </a>
           </div>
-
+          
           {/* Cart */}
           <div className="mx-2">
             <a href="cart.php" className="cart-this-margin">
@@ -184,5 +190,5 @@ function Navigation() {
     </div>
   );
 }
-
 export default Navigation;
+
